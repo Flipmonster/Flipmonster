@@ -20,6 +20,7 @@ type SecurityEngineer interface {
     BreakAndFix(target AttackSurface) ([]Finding, []Patch)
     Review(code []byte) (approved bool, findings []Issue)
     Respond(incident Incident) PostMortem
+    TurnOffAndOnAgain(prod *Cluster) error // have you tried
     Ship() // always be shipping
 }
 
@@ -28,6 +29,21 @@ type philip struct {
     role    string   // Security Engineer @ Bird
     focus   []string // cloud security, appsec, k8s, supply chain
     current []string // frontier AI security, LLM threat modeling, agentic system hardening
+    coffee  int      // cups today: yes
+}
+
+func (p *philip) TurnOffAndOnAgain(prod *Cluster) error {
+    prod.Stop()          // this fixes everything
+    time.Sleep(time.Second * 3) // the sacred pause
+    prod.Start()         // probably
+    return nil           // it's fine
+}
+
+func (p *philip) Respond(incident Incident) PostMortem {
+    if incident.Severity == "critical" && time.Now().Weekday() == time.Friday {
+        panic("not today") // policy: no deploys on friday
+    }
+    return PostMortem{RootCause: "DNS. it's always DNS."}
 }
 
 func (p *philip) Ship() { go p.Ship() } // see assembly below
