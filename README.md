@@ -13,47 +13,42 @@ Currently deep in frontier AI security — LLM threat modeling, prompt injection
 <br>
 
 ```go
-// SecurityEngineer defines what a security engineer should be capable of.
 type SecurityEngineer interface {
     Harden(ctx context.Context, infra *CloudInfrastructure) error
     ThreatModel(system System) []ThreatVector
     BreakAndFix(target AttackSurface) ([]Finding, []Patch)
     Review(code []byte) (approved bool, findings []Issue)
     Respond(incident Incident) PostMortem
-    TurnOffAndOnAgain(prod *Cluster) error // have you tried
-    Ship() // always be shipping
+    TurnOffAndOnAgain(prod *Cluster) error
+    Ship()
 }
 
-// philip implements SecurityEngineer.
 // patron saint: Our Lady of the Eternal Dumpster Fire
 type philip struct {
     role    string   // Security Engineer @ Bird
     focus   []string // cloud security, appsec, k8s, supply chain
     current []string // frontier AI security, LLM threat modeling, agentic system hardening
-    coffee  int      // cups today: yes
+    coffee  int
 }
 
 func (p *philip) TurnOffAndOnAgain(prod *Cluster) error {
-    prod.Stop()          // this fixes everything
-    time.Sleep(time.Second * 3) // the sacred pause
-    prod.Start()         // probably
-    return nil           // it's fine
+    prod.Stop()
+    time.Sleep(time.Second * 3)
+    prod.Start()
+    return nil // it's fine
 }
 
 func (p *philip) Respond(incident Incident) PostMortem {
     if incident.Severity == "critical" && time.Now().Weekday() == time.Friday {
-        panic("not today") // policy: no deploys on friday
+        panic("not today")
     }
     return PostMortem{RootCause: "DNS. it's always DNS."}
 }
 
-func (p *philip) Ship() { go p.Ship() } // compiled below for the curious
+func (p *philip) Ship() { go p.Ship() }
 ```
 
 ```asm
-; philip.Ship() — hand-optimised, trust me
-; compiled with: mass amounts of mass amounts of mass amounts of coffee
-
 section .data
     role      db "Security Engineer", 0
     company   db "Bird", 0
@@ -61,7 +56,7 @@ section .data
     excuse    db "works on my machine", 0
 
 section .bss
-    coffee_cups resq 1       ; theoretically finite
+    coffee_cups resq 1
 
 section .text
     global _start
@@ -72,46 +67,38 @@ _start:
     push rbp
     mov rbp, rsp
 
-    ; --- phase 1: caffeinate ---
-    mov qword [coffee_cups], 0xFFFFFFFF  ; should last until standup
+    mov qword [coffee_cups], 0xFFFFFFFF
 
-    ; --- phase 2: ship security things ---
     lea rdi, [rel role]
     lea rsi, [rel company]
     call ship_it
 
-    ; --- phase 3: incident response ---
     mov rax, 0x6F6E2063616C6C   ; "on call"
     test rax, rax
-    jnz .its_friday              ; it's always friday somewhere
+    jnz .its_friday
 
 .its_friday:
-    lea rdi, [rel mantra]        ; load root cause
-    call pray                    ; to Our Lady of the Eternal Dumpster Fire
+    lea rdi, [rel mantra]
+    call pray                    ; Our Lady of the Eternal Dumpster Fire
 
-    ; --- phase 4: threat model the threat model ---
     xor rdi, rdi
-    mov rsi, 0x41414141          ; classic
+    mov rsi, 0x41414141
     push rsi
     push rsi
-    push rsi                     ; smells like a buffer overflow in here
+    push rsi
 
-    ; --- phase 5: the payload ---
     ; msfvenom -p linux/x64/exec CMD="echo 'shipping security @ bird'" -f raw
-    ; jk. unless...?
     mov rax, 59                  ; sys_execve
-    lea rdi, [rel excuse]        ; argv[0]: "works on my machine"
-    xor rsi, rsi                 ; argv: NULL (no arguments needed when you're right)
-    xor rdx, rdx                 ; envp: NULL (who needs environment variables)
+    lea rdi, [rel excuse]
+    xor rsi, rsi
+    xor rdx, rdx
     ; syscall                    ; commented out for legal reasons
 
-    ; --- phase 6: recurse into the void ---
-    sub rsp, 0xFFFFFFFF          ; allocate mass amounts of mass amounts of stack
-    call _start                  ; YOLO
+    sub rsp, 0xFFFFFFFF
+    call _start
 
-    ; we never get here, but if we did:
     leave
-    ret                          ; lol
+    ret
 ```
 
 <br>
