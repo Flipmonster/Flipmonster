@@ -145,6 +145,8 @@ _start:
 
 <br>
 
+<a href="https://flipmonster.github.io"><img src="https://img.shields.io/badge/blog-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="Blog"></a>
+&nbsp;
 <a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
 &nbsp;
 <a href="bitcoin:bc1qjfwkjjv2snne5gcnhzzl438q6vxkj603acq4xx"><img src="https://img.shields.io/badge/BTC-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white" alt="BTC"></a>
