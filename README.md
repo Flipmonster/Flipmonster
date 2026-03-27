@@ -4,11 +4,9 @@
 
 ### philip
 
-Security Engineer at [Bird](https://bird.com). Shipping all things security.
+Security Engineer at [Bird](https://bird.com). ZA born, NL based.
 
-Cloud-native infrastructure, Kubernetes hardening, application security, supply chain integrity.<br>
-Building guardrails, reviewing architecture, shrinking attack surfaces.<br>
-Currently deep in frontier AI security — LLM threat modeling, prompt injection defence, model supply chain risks, and securing AI-native infrastructure before the rest of the industry catches up.
+Shipping security at scale. Cloud infra, Kubernetes, appsec, supply chain. Started out breaking things at SensePost, now I make sure they don't break. Currently deep in frontier AI security, LLM threat modeling, prompt injection defence, and securing agentic systems before the rest of the industry catches up.
 
 </div>
 
