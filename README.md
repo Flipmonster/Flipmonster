@@ -4,11 +4,22 @@
 
 ### philip
 
-Security Engineer at [Bird](https://bird.com). ZA born, NL based.
+security engineer. south african in the netherlands. dad of two, owned by two dachshunds.
 
-Shipping security at scale. Cloud infra, Kubernetes, appsec, supply chain. Started out breaking things, now I make sure they don't break or at least try to! Currently deep into AI security, LLM threat modeling, prompt injection defence, and securing agentic systems before the rest of the industry catches up.
+i break things for a living, then write policies about why nobody else should.
+most of my commits are fixing what i broke. the rest is coffee-driven overengineering.
 
 </div>
+
+---
+
+**day job** — security at [Bird](https://bird.com). cloud infra, kubernetes, appsec, supply chain.
+
+**after hours** — building things, poking at AI security, and mass producing go binaries that may or may not work.
+
+**what i'm into right now** — LLM threat modeling, prompt injection, securing agentic systems, and figuring out how to stop AI from doing exactly what you told it not to.
+
+---
 
 ```go
 package philip
@@ -32,7 +43,7 @@ type SecurityEngineer interface {
 type philip struct {
     role    string
     focus   []string // cloud security, appsec, k8s, supply chain
-    current []string // frontier AI security, LLM threat modeling, agentic system hardening
+    current []string // AI security, LLM threat modeling, agentic system hardening
     coffee  int
 }
 
@@ -40,7 +51,7 @@ func NewPhilip() SecurityEngineer {
     return &philip{
         role:    "Security Engineer",
         focus:   []string{"cloud security", "appsec", "k8s", "supply chain"},
-        current: []string{"frontier AI security", "LLM threat modeling", "agentic system hardening"},
+        current: []string{"AI security", "LLM threat modeling", "agentic system hardening"},
         coffee:  0xFFFF,
     }
 }
@@ -115,6 +126,8 @@ _start:
   leave
   ret
 ```
+
+---
 
 <div align="center">
 
