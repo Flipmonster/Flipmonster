@@ -1,5 +1,5 @@
-### hey, i'm philip
+security engineer [@bird](https://bird.com). shipping all things security — from cloud infrastructure to application security to making sure nobody does anything stupid in production.
 
-shipping security @ [Bird](https://bird.com)
+interested in cloud-native security, supply chain security, and the CNCF security landscape. occasional contributor, full-time defender.
 
-<a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=flat-square&logo=x&logoColor=white" alt="X"></a>
+find me on [x](https://twitter.com/_0xrizla)
