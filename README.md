@@ -68,56 +68,54 @@ func (p *philip) Ship() { go p.Ship() }
 
 ```x86asm
 ; objdump -d philip | less
-; what Ship() looks like after the compiler is done with it
 
-            global  _start
+section .data
+  role:    db "Security Engineer", 0x00
+  company: db "Bird", 0x00
+  mantra:  db "it's always DNS", 0x00
+  excuse:  db "works on my machine", 0x00
 
-section     .data
-role:       db      "Security Engineer", 0x00
-company:    db      "Bird", 0x00
-mantra:     db      "it's always DNS", 0x00
-excuse:     db      "works on my machine", 0x00
+section .bss
+  coffee: resq 1
 
-section     .bss
-coffee:     resq    1
+section .text
+  global _start
 
-section     .text
+_start:
+  push rbp
+  mov  rbp, rsp
+  mov  qword [rel coffee], 0xFFFFFFFF
 
-_start:     push    rbp
-            mov     rbp, rsp
+  lea  rdi, [rel role]
+  lea  rsi, [rel company]
+  call ship_it
 
-            mov     qword [rel coffee], 0xFFFFFFFF
-
-            lea     rdi, [rel role]
-            lea     rsi, [rel company]
-            call    ship_it
-
-            mov     rax, 0x6F6E2063616C6C       ; "on call"
-            test    rax, rax
-            jnz     .its_friday
+  mov  rax, 0x6F6E2063616C6C  ; "on call"
+  test rax, rax
+  jnz  .its_friday
 
 .its_friday:
-            lea     rdi, [rel mantra]
-            call    pray                         ; Our Lady of the Eternal Dumpster Fire
+  lea  rdi, [rel mantra]
+  call pray                    ; Our Lady of the Eternal Dumpster Fire
 
-            xor     rdi, rdi
-            mov     rsi, 0x41414141
-            push    rsi
-            push    rsi
-            push    rsi
+  xor  rdi, rdi
+  mov  rsi, 0x41414141
+  push rsi
+  push rsi
+  push rsi
 
-            ; msfvenom -p linux/x64/exec CMD="echo 'shipping security @ bird'" -f raw
-            mov     rax, 59                      ; sys_execve
-            lea     rdi, [rel excuse]
-            xor     rsi, rsi
-            xor     rdx, rdx
-            ; syscall                            ; commented out for legal reasons
+  ; msfvenom -p linux/x64/exec CMD="echo 'shipping security @ bird'" -f raw
+  mov  rax, 59                 ; sys_execve
+  lea  rdi, [rel excuse]
+  xor  rsi, rsi
+  xor  rdx, rdx
+  ; syscall                    ; commented out for legal reasons
 
-            sub     rsp, 0xFFFFFFFF
-            call    _start
+  sub  rsp, 0xFFFFFFFF
+  call _start
 
-            leave
-            ret
+  leave
+  ret
 ```
 
 <br>
