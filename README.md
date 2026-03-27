@@ -21,6 +21,27 @@ type Focus struct {
 }
 ```
 
+```asm
+section .data
+    role    db "Security Engineer", 0
+    company db "Bird", 0
+
+section .text
+    global _start
+
+_start:
+    ; ship security things
+    mov rdi, role
+    mov rsi, company
+    call ship_it
+
+    ; oops
+    push rbp
+    mov rbp, rsp
+    sub rsp, 0xFFFFFFFF      ; nothing to see here
+    call _start              ; :)
+```
+
 <br>
 
 <img src="https://streak-stats.demolab.com/?user=Flipmonster&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=c9d1d9" width="52%" alt="streak">
