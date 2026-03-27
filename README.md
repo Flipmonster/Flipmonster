@@ -239,9 +239,6 @@ $ echo $PHILOSOPHY
 
 <br>
 
-<a href="bitcoin:bc1qjfwkjjv2snne5gcnhzzl438q6vxkj603acq4xx"><img src="https://img.shields.io/badge/buy_me_a_coffee_(BTC)-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white" alt="BTC"></a>
-
-<br><br>
 
 <img src="https://komarev.com/ghpvc/?username=Flipmonster&style=flat-square&color=58a6ff&label=profile+views" alt="views">
 
