@@ -1,5 +1,7 @@
-security engineer [@bird](https://bird.com). shipping all things security — from cloud infrastructure to application security to making sure nobody does anything stupid in production.
+## philip
 
-interested in cloud-native security, supply chain security, and the CNCF security landscape. occasional contributor, full-time defender.
+Security Engineer at [Bird](https://bird.com). Shipping all things security.
 
-find me on [x](https://twitter.com/_0xrizla)
+Cloud-native infrastructure, Kubernetes hardening, application security, supply chain integrity. Building guardrails, reviewing architecture, shrinking attack surfaces. Deep in the CNCF security ecosystem — if it defends infrastructure at scale, I'm probably reading the source.
+
+[@_0xrizla](https://twitter.com/_0xrizla)
