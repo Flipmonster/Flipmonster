@@ -233,7 +233,6 @@ $ echo $PHILOSOPHY
 <br>
 
 
-<img src="https://komarev.com/ghpvc/?username=Flipmonster&style=flat-square&color=58a6ff&label=profile+views" alt="views">
 
 </div>
 
