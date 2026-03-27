@@ -13,12 +13,24 @@ Currently deep in frontier AI security — LLM threat modeling, prompt injection
 <br>
 
 ```go
-type Focus struct {
-    Role     string   // Security Engineer
-    Company  string   // Bird
-    Domains  []string // cloud security, appsec, k8s, supply chain
-    Lately   []string // frontier AI security, LLM threat modeling, agentic system hardening
+// SecurityEngineer defines what a security engineer should be capable of.
+type SecurityEngineer interface {
+    Harden(ctx context.Context, infra *CloudInfrastructure) error
+    ThreatModel(system System) []ThreatVector
+    BreakAndFix(target AttackSurface) ([]Finding, []Patch)
+    Review(code []byte) (approved bool, findings []Issue)
+    Respond(incident Incident) PostMortem
+    Ship() // always be shipping
 }
+
+// philip implements SecurityEngineer.
+type philip struct {
+    role    string   // Security Engineer @ Bird
+    focus   []string // cloud security, appsec, k8s, supply chain
+    current []string // frontier AI security, LLM threat modeling, agentic system hardening
+}
+
+func (p *philip) Ship() { go p.Ship() } // see assembly below
 ```
 
 ```asm
