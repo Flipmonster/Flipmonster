@@ -1,25 +1,89 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=120&section=header" width="100%">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=180&section=header&text=&fontSize=0" width="100%">
 
 <div align="center">
 
-### Philip
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=%24+whoami;Philip+%7C+Security+Engineer+%40+Bird" alt="Typing SVG">
 
-security engineer. south african in the netherlands. dad of two, owned by two dachshunds.
+<br>
 
-i break things for a living, then write policies about why nobody else should.
-most of my commits are fixing what i broke. the rest is coffee-driven overengineering.
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=14&duration=4000&pause=2000&color=8B949E&center=true&vCenter=true&repeat=true&width=700&height=30&lines=south+african+%F0%9F%87%BF%F0%9F%87%A6+in+the+netherlands+%F0%9F%87%B3%F0%9F%87%B1+%E2%80%94+ex-SensePost+%E2%80%94+dad+of+two%2C+owned+by+two+dachshunds" alt="Typing SVG">
+
+<br><br>
+
+<a href="https://www.linkedin.com/in/pvw1337/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+&nbsp;
+<a href="https://flipmonster.github.io"><img src="https://img.shields.io/badge/blog-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="Blog"></a>
+&nbsp;
+<a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
 
 </div>
 
----
+<br>
+
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### `> cat /etc/motd`
+
+i break things for a living, then write policies about why nobody else should.
+
+most of my commits are fixing what i broke. the rest is coffee-driven overengineering.
 
 **day job** — security at [Bird](https://bird.com). cloud infra, kubernetes, appsec, supply chain.
 
-**after hours** — building things, poking at AI security, and mass producing go binaries that may or may not work.
+**after hours** — building things, poking at AI security, mass producing go binaries that may or may not work.
 
-**what i'm into right now** — LLM threat modeling, prompt injection, securing agentic systems, and figuring out how to stop AI from doing exactly what you told it not to.
+</td>
+<td width="50%" valign="top">
 
----
+### `> cat /proc/current`
+
+```yaml
+focus:
+  - LLM threat modeling
+  - prompt injection research
+  - securing agentic systems
+  - figuring out how to stop AI
+    from doing exactly what you
+    told it not to
+
+status: caffeinated
+oncall: probably
+dns:    broken (as always)
+```
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<div align="center">
+
+### `> strings philip.elf | grep -i stack`
+
+<br>
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
+![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+</div>
+
+<br>
+
+<details>
+<summary><b><code>> objdump -d philip | less</code></b></summary>
+<br>
 
 ```go
 package philip
@@ -75,6 +139,8 @@ func (p *philip) Ship() { go p.Ship() }
 
 `go build -o /dev/null` — compiles, ships, leaves no trace. just like prod.
 
+<br>
+
 ```x86asm
 ; objdump -d philip | less
 
@@ -127,9 +193,22 @@ _start:
   ret
 ```
 
+</details>
+
+<br>
+
 ---
 
 <div align="center">
+
+### `> uptime`
+
+<br>
+
+<img src="https://github-readme-stats.vercel.app/api?username=Flipmonster&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&ring_color=58a6ff" width="49%" alt="stats">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Flipmonster&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=8" width="49%" alt="langs">
+
+<br><br>
 
 <img src="https://streak-stats.demolab.com/?user=Flipmonster&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=c9d1d9" width="52%" alt="streak">
 
@@ -145,24 +224,26 @@ _start:
   <img alt="snake eating contributions" src="https://raw.githubusercontent.com/Flipmonster/Flipmonster/output/github-snake-dark.svg" width="100%">
 </picture>
 
-<br>
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+</div>
 
 <br>
 
-<a href="https://flipmonster.github.io"><img src="https://img.shields.io/badge/blog-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="Blog"></a>
-&nbsp;
-<a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
-&nbsp;
-<a href="bitcoin:bc1qjfwkjjv2snne5gcnhzzl438q6vxkj603acq4xx"><img src="https://img.shields.io/badge/BTC-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white" alt="BTC"></a>
+---
+
+<div align="center">
+
+```
+$ echo $PHILOSOPHY
+"security is a spectrum. i'm somewhere between 'defense in depth' and 'have you tried turning it off and on again'"
+```
+
+<br>
+
+<a href="bitcoin:bc1qjfwkjjv2snne5gcnhzzl438q6vxkj603acq4xx"><img src="https://img.shields.io/badge/buy_me_a_coffee_(BTC)-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white" alt="BTC"></a>
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=Flipmonster&style=flat-square&color=58a6ff&label=profile+views" alt="views">
 
 </div>
 
