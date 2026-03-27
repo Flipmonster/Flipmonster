@@ -8,7 +8,7 @@ Security Engineer at [Bird](https://bird.com). Shipping all things security.
 
 Cloud-native infrastructure, Kubernetes hardening, application security, supply chain integrity.<br>
 Building guardrails, reviewing architecture, shrinking attack surfaces.<br>
-Deep in the CNCF security ecosystem — if it defends infrastructure at scale, I'm probably reading the source.
+Currently deep in frontier AI security — LLM threat modeling, prompt injection defence, model supply chain risks, and securing AI-native infrastructure before the rest of the industry catches up.
 
 <br>
 
@@ -17,7 +17,7 @@ type Focus struct {
     Role     string   // Security Engineer
     Company  string   // Bird
     Domains  []string // cloud security, appsec, k8s, supply chain
-    Lately   []string // runtime security, policy-as-code, attack surface mapping
+    Lately   []string // frontier AI security, LLM threat modeling, agentic system hardening
 }
 ```
 
