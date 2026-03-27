@@ -13,89 +13,110 @@ Currently deep in frontier AI security — LLM threat modeling, prompt injection
 <br>
 
 ```go
+package philip
+
+import (
+	"context"
+	"time"
+)
+
+// SecurityEngineer defines what a security engineer should be capable of.
 type SecurityEngineer interface {
-    Harden(ctx context.Context, infra *CloudInfrastructure) error
-    ThreatModel(system System) []ThreatVector
-    BreakAndFix(target AttackSurface) ([]Finding, []Patch)
-    Review(code []byte) (approved bool, findings []Issue)
-    Respond(incident Incident) PostMortem
-    TurnOffAndOnAgain(prod *Cluster) error
-    Ship()
+	Harden(ctx context.Context, infra *CloudInfrastructure) error
+	ThreatModel(system System) []ThreatVector
+	BreakAndFix(target AttackSurface) ([]Finding, []Patch)
+	Review(code []byte) (approved bool, findings []Issue)
+	Respond(incident Incident) PostMortem
+	TurnOffAndOnAgain(prod *Cluster) error
+	Ship()
 }
 
 // patron saint: Our Lady of the Eternal Dumpster Fire
 type philip struct {
-    role    string   // Security Engineer @ Bird
-    focus   []string // cloud security, appsec, k8s, supply chain
-    current []string // frontier AI security, LLM threat modeling, agentic system hardening
-    coffee  int
+	role    string
+	focus   []string // cloud security, appsec, k8s, supply chain
+	current []string // frontier AI security, LLM threat modeling, agentic system hardening
+	coffee  int
+}
+
+func NewPhilip() SecurityEngineer {
+	return &philip{
+		role:    "Security Engineer",
+		focus:   []string{"cloud security", "appsec", "k8s", "supply chain"},
+		current: []string{"frontier AI security", "LLM threat modeling", "agentic system hardening"},
+		coffee:  0xFFFF,
+	}
 }
 
 func (p *philip) TurnOffAndOnAgain(prod *Cluster) error {
-    prod.Stop()
-    time.Sleep(time.Second * 3)
-    prod.Start()
-    return nil // it's fine
+	prod.Stop()
+	time.Sleep(3 * time.Second)
+	prod.Start()
+	return nil // it's fine
 }
 
 func (p *philip) Respond(incident Incident) PostMortem {
-    if incident.Severity == "critical" && time.Now().Weekday() == time.Friday {
-        panic("not today")
-    }
-    return PostMortem{RootCause: "DNS. it's always DNS."}
+	if incident.Severity == "critical" && time.Now().Weekday() == time.Friday {
+		panic("not today")
+	}
+	return PostMortem{RootCause: "DNS. it's always DNS."}
 }
 
 func (p *philip) Ship() { go p.Ship() }
 ```
 
-```asm
+`go build -o /dev/null` — compiles, ships, leaves no trace. just like prod.
+
+```nasm
+; objdump -d philip | less
+; or: what Ship() looks like after the compiler is done with it
+
+global _start
+
 section .data
-    role      db "Security Engineer", 0
-    company   db "Bird", 0
-    mantra    db "it's always DNS", 0
-    excuse    db "works on my machine", 0
+    role:       db "Security Engineer", 0x00
+    company:    db "Bird", 0x00
+    mantra:     db "it's always DNS", 0x00
+    excuse:     db "works on my machine", 0x00
 
 section .bss
-    coffee_cups resq 1
+    coffee_cups: resq 1
 
 section .text
-    global _start
-    extern ship_it
-    extern pray
 
 _start:
-    push rbp
-    mov rbp, rsp
+    push  rbp
+    mov   rbp, rsp
 
-    mov qword [coffee_cups], 0xFFFFFFFF
+    mov   qword [rel coffee_cups], 0xFFFFFFFF
 
-    lea rdi, [rel role]
-    lea rsi, [rel company]
-    call ship_it
+    lea   rdi, [rel role]
+    lea   rsi, [rel company]
+    call  ship_it
 
-    mov rax, 0x6F6E2063616C6C   ; "on call"
-    test rax, rax
-    jnz .its_friday
+    mov   rax, 0x6F6E2063616C6C     ; "on call"
+    test  rax, rax
+    jnz   .its_friday
 
 .its_friday:
-    lea rdi, [rel mantra]
-    call pray                    ; Our Lady of the Eternal Dumpster Fire
+    lea   rdi, [rel mantra]
+    call  pray                       ; Our Lady of the Eternal Dumpster Fire
 
-    xor rdi, rdi
-    mov rsi, 0x41414141
-    push rsi
-    push rsi
-    push rsi
+    xor   rdi, rdi
+    mov   rsi, 0x41414141
+    push  rsi
+    push  rsi
+    push  rsi
 
     ; msfvenom -p linux/x64/exec CMD="echo 'shipping security @ bird'" -f raw
-    mov rax, 59                  ; sys_execve
-    lea rdi, [rel excuse]
-    xor rsi, rsi
-    xor rdx, rdx
-    ; syscall                    ; commented out for legal reasons
+    mov   rax, 59                    ; sys_execve
+    lea   rdi, [rel excuse]
+    xor   rsi, rsi
+    xor   rdx, rdx
+    ; syscall                        ; commented out for legal reasons
 
-    sub rsp, 0xFFFFFFFF
-    call _start
+    sub   rsp, 0xFFFFFFFF
+    call  _start
 
     leave
     ret
