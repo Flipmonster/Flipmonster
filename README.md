@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### philip
+### Philip
 
 security engineer. south african in the netherlands. dad of two, owned by two dachshunds.
 
