@@ -6,7 +6,7 @@
 
 Security Engineer at [Bird](https://bird.com). ZA born, NL based.
 
-Shipping security at scale. Cloud infra, Kubernetes, appsec, supply chain. Started out breaking things at SensePost, now I make sure they don't break. Currently deep in frontier AI security, LLM threat modeling, prompt injection defence, and securing agentic systems before the rest of the industry catches up.
+Shipping security at scale. Cloud infra, Kubernetes, appsec, supply chain. Started out breaking things, now I make sure they don't break or at least try to! Currently deep into AI security, LLM threat modeling, prompt injection defence, and securing agentic systems before the rest of the industry catches up.
 
 </div>
 
