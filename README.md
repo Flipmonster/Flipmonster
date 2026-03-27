@@ -10,7 +10,7 @@ Cloud-native infrastructure, Kubernetes hardening, application security, supply 
 Building guardrails, reviewing architecture, shrinking attack surfaces.<br>
 Currently deep in frontier AI security — LLM threat modeling, prompt injection defence, model supply chain risks, and securing AI-native infrastructure before the rest of the industry catches up.
 
-<br>
+</div>
 
 ```go
 package philip
@@ -118,7 +118,7 @@ _start:
   ret
 ```
 
-<br>
+<div align="center">
 
 <img src="https://streak-stats.demolab.com/?user=Flipmonster&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=c9d1d9" width="52%" alt="streak">
 
@@ -139,7 +139,6 @@ _start:
 <a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
 &nbsp;
 <a href="https://buymeacoffee.com/flipmonster"><img src="https://img.shields.io/badge/buy_me_a_coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"></a>
-
 
 </div>
 
