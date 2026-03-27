@@ -47,28 +47,71 @@ func (p *philip) Respond(incident Incident) PostMortem {
     return PostMortem{RootCause: "DNS. it's always DNS."}
 }
 
-func (p *philip) Ship() { go p.Ship() } // see assembly below
+func (p *philip) Ship() { go p.Ship() } // compiled below for the curious
 ```
 
 ```asm
+; philip.Ship() — hand-optimised, trust me
+; compiled with: mass amounts of mass amounts of mass amounts of coffee
+
 section .data
-    role    db "Security Engineer", 0
-    company db "Bird", 0
+    role      db "Security Engineer", 0
+    company   db "Bird", 0
+    mantra    db "it's always DNS", 0
+    excuse    db "works on my machine", 0
+
+section .bss
+    coffee_cups resq 1       ; theoretically finite
 
 section .text
     global _start
+    extern ship_it
+    extern pray
 
 _start:
-    ; ship security things
-    mov rdi, role
-    mov rsi, company
-    call ship_it
-
-    ; oops
     push rbp
     mov rbp, rsp
-    sub rsp, 0xFFFFFFFF      ; nothing to see here
-    call _start              ; :)
+
+    ; --- phase 1: caffeinate ---
+    mov qword [coffee_cups], 0xFFFFFFFF  ; should last until standup
+
+    ; --- phase 2: ship security things ---
+    lea rdi, [rel role]
+    lea rsi, [rel company]
+    call ship_it
+
+    ; --- phase 3: incident response ---
+    mov rax, 0x6F6E2063616C6C   ; "on call"
+    test rax, rax
+    jnz .its_friday              ; it's always friday somewhere
+
+.its_friday:
+    lea rdi, [rel mantra]        ; load root cause
+    call pray                    ; to Our Lady of the Eternal Dumpster Fire
+
+    ; --- phase 4: threat model the threat model ---
+    xor rdi, rdi
+    mov rsi, 0x41414141          ; classic
+    push rsi
+    push rsi
+    push rsi                     ; smells like a buffer overflow in here
+
+    ; --- phase 5: the payload ---
+    ; msfvenom -p linux/x64/exec CMD="echo 'shipping security @ bird'" -f raw
+    ; jk. unless...?
+    mov rax, 59                  ; sys_execve
+    lea rdi, [rel excuse]        ; argv[0]: "works on my machine"
+    xor rsi, rsi                 ; argv: NULL (no arguments needed when you're right)
+    xor rdx, rdx                 ; envp: NULL (who needs environment variables)
+    ; syscall                    ; commented out for legal reasons
+
+    ; --- phase 6: recurse into the void ---
+    sub rsp, 0xFFFFFFFF          ; allocate mass amounts of mass amounts of stack
+    call _start                  ; YOLO
+
+    ; we never get here, but if we did:
+    leave
+    ret                          ; lol
 ```
 
 <br>
