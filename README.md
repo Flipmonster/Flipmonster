@@ -25,6 +25,7 @@ type SecurityEngineer interface {
 }
 
 // philip implements SecurityEngineer.
+// patron saint: Our Lady of the Eternal Dumpster Fire
 type philip struct {
     role    string   // Security Engineer @ Bird
     focus   []string // cloud security, appsec, k8s, supply chain
