@@ -142,9 +142,6 @@ _start:     push    rbp
 &nbsp;
 <a href="https://buymeacoffee.com/flipmonster"><img src="https://img.shields.io/badge/buy_me_a_coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"></a>
 
-<br><br>
-
-![](https://komarev.com/ghpvc/?username=Flipmonster&color=58a6ff&style=flat-square&label=profile+views)
 
 </div>
 
