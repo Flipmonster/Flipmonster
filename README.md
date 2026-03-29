@@ -26,13 +26,9 @@
 
 ### `> cat /etc/motd`
 
-i break things for a living, then write policies about why nobody else should.
+Security engineer at [Bird](https://bird.com) — cloud infrastructure, Kubernetes, application security, and supply chain.
 
-most of my commits are fixing what i broke. the rest is coffee-driven overengineering.
-
-**day job** — security at [Bird](https://bird.com). cloud infra, kubernetes, appsec, supply chain.
-
-**after hours** — building things, poking at AI security, mass producing go binaries that may or may not work.
+After hours: building tools, poking at AI security, and mass producing Go binaries that may or may not work.
 
 </td>
 <td width="50%" valign="top">
@@ -44,9 +40,7 @@ focus:
   - LLM threat modeling
   - prompt injection research
   - securing agentic systems
-  - figuring out how to stop AI
-    from doing exactly what you
-    told it not to
+  - adversarial AI defense
 
 status: caffeinated
 oncall: probably
@@ -97,15 +91,13 @@ type SecurityEngineer interface {
     BreakAndFix(target AttackSurface) ([]Finding, []Patch)
     Review(code []byte) (approved bool, findings []Issue)
     Respond(incident Incident) PostMortem
-    TurnOffAndOnAgain(prod *Cluster) error
     Ship()
 }
 
-// patron saint: Our Lady of the Eternal Dumpster Fire
 type philip struct {
     role    string
-    focus   []string // cloud security, appsec, k8s, supply chain
-    current []string // AI security, LLM threat modeling, agentic system hardening
+    focus   []string
+    current []string
     coffee  int
 }
 
@@ -118,13 +110,6 @@ func NewPhilip() SecurityEngineer {
     }
 }
 
-func (p *philip) TurnOffAndOnAgain(prod *Cluster) error {
-    prod.Stop()
-    time.Sleep(3 * time.Second)
-    prod.Start()
-    return nil // it's fine
-}
-
 func (p *philip) Respond(incident Incident) PostMortem {
     if incident.Severity == "critical" && time.Now().Weekday() == time.Friday {
         panic("not today")
@@ -133,62 +118,6 @@ func (p *philip) Respond(incident Incident) PostMortem {
 }
 
 func (p *philip) Ship() { go p.Ship() }
-```
-
-`go build -o /dev/null` — compiles, ships, leaves no trace. just like prod.
-
-<br>
-
-```x86asm
-; objdump -d philip | less
-
-section .data
-  role:    db "Security Engineer", 0x00
-  company: db "Bird", 0x00
-  mantra:  db "it's always DNS", 0x00
-  excuse:  db "works on my machine", 0x00
-
-section .bss
-  coffee: resq 1
-
-section .text
-  global _start
-
-_start:
-  push rbp
-  mov  rbp, rsp
-  mov  qword [rel coffee], 0xFFFFFFFF
-
-  lea  rdi, [rel role]
-  lea  rsi, [rel company]
-  call ship_it
-
-  mov  rax, 0x6F6E2063616C6C  ; "on call"
-  test rax, rax
-  jnz  .its_friday
-
-.its_friday:
-  lea  rdi, [rel mantra]
-  call pray                    ; Our Lady of the Eternal Dumpster Fire
-
-  xor  rdi, rdi
-  mov  rsi, 0x41414141
-  push rsi
-  push rsi
-  push rsi
-
-  ; msfvenom -p linux/x64/exec CMD="echo 'shipping security @ bird'" -f raw
-  mov  rax, 59                 ; sys_execve
-  lea  rdi, [rel excuse]
-  xor  rsi, rsi
-  xor  rdx, rdx
-  ; syscall                    ; commented out for legal reasons
-
-  sub  rsp, 0xFFFFFFFF
-  call _start
-
-  leave
-  ret
 ```
 
 </details>
@@ -200,10 +129,6 @@ _start:
 <div align="center">
 
 ### `> uptime`
-
-<br>
-
-<img src="https://streak-stats.demolab.com/?user=Flipmonster&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=30363d&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=58a6ff&dates=c9d1d9" width="52%" alt="streak">
 
 <br>
 
@@ -225,14 +150,9 @@ _start:
 
 <div align="center">
 
-```
-$ echo $PHILOSOPHY
-"security is a spectrum. i'm somewhere between 'defense in depth' and 'have you tried turning it off and on again'"
-```
-
 <br>
 
-
+<img src="https://komarev.com/ghpvc/?username=Flipmonster&style=flat-square&color=58a6ff&label=profile+views" alt="views">
 
 </div>
 
