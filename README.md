@@ -4,17 +4,15 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=%24+whoami;Philip+%7C+Security+Engineer+%40+Bird" alt="Typing SVG">
 
-<br>
+<p>
+  <sub>south african in the netherlands — dad of two, owned by two dachshunds</sub>
+</p>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=14&duration=4000&pause=2000&color=8B949E&center=true&vCenter=true&repeat=true&width=900&height=30&lines=south+african+%F0%9F%87%BF%F0%9F%87%A6+in+the+netherlands+%F0%9F%87%B3%F0%9F%87%B1+%E2%80%94+dad+of+two%2C+owned+by+two+dachshunds" alt="Typing SVG">
-
-<br><br>
-
-<a href="https://www.linkedin.com/in/pvw1337/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+<a href="https://www.linkedin.com/in/pvw1337/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 &nbsp;
-<a href="https://flipmonster.github.io"><img src="https://img.shields.io/badge/blog-58a6ff?style=for-the-badge&logo=github&logoColor=white" alt="Blog"></a>
+<a href="https://flipmonster.github.io"><img src="https://img.shields.io/badge/Blog-58a6ff?style=flat-square&logo=github&logoColor=white" alt="Blog"></a>
 &nbsp;
-<a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
+<a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=flat-square&logo=x&logoColor=white" alt="X"></a>
 
 </div>
 
@@ -50,26 +48,6 @@ dns:    broken (as always)
 </td>
 </tr>
 </table>
-
-<br>
-
-<div align="center">
-
-### `> strings philip.elf | grep -i stack`
-
-<br>
-
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
-
-</div>
 
 <br>
 
@@ -124,17 +102,7 @@ func (p *philip) Ship() { go p.Ship() }
 
 <br>
 
----
-
 <div align="center">
-
-### `> uptime`
-
-<br>
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Flipmonster&theme=github-compact&hide_border=true&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area=true&area_color=58a6ff33)](https://github.com/Flipmonster)
-
-<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Flipmonster/Flipmonster/output/github-snake-dark.svg">
@@ -143,10 +111,5 @@ func (p *philip) Ship() { go p.Ship() }
 </picture>
 
 </div>
-
-<br>
-
----
-
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58a6ff,50:161b22,100:0d1117&height=80&section=footer" width="100%">
