@@ -13,6 +13,8 @@
 <a href="https://oxrizla.pages.dev/"><img src="https://img.shields.io/badge/Blog-58a6ff?style=flat-square&logo=cloudflare&logoColor=white" alt="Blog"></a>
 &nbsp;
 <a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=flat-square&logo=x&logoColor=white" alt="X"></a>
+&nbsp;
+<a href="https://discord.com/users/flipmstr"><img src="https://img.shields.io/badge/flipmstr-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord"></a>
 
 </div>
 
