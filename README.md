@@ -148,12 +148,5 @@ func (p *philip) Ship() { go p.Ship() }
 
 ---
 
-<div align="center">
-
-<br>
-
-<img src="https://komarev.com/ghpvc/?username=Flipmonster&style=flat-square&color=58a6ff&label=profile+views" alt="views">
-
-</div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58a6ff,50:161b22,100:0d1117&height=80&section=footer" width="100%">
