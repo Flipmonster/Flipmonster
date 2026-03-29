@@ -10,7 +10,7 @@
 
 <a href="https://www.linkedin.com/in/pvw1337/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 &nbsp;
-<a href="https://flipmonster.github.io"><img src="https://img.shields.io/badge/Blog-58a6ff?style=flat-square&logo=github&logoColor=white" alt="Blog"></a>
+<a href="https://oxrizla.pages.dev/"><img src="https://img.shields.io/badge/Blog-58a6ff?style=flat-square&logo=cloudflare&logoColor=white" alt="Blog"></a>
 &nbsp;
 <a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=flat-square&logo=x&logoColor=white" alt="X"></a>
 
