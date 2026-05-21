@@ -34,10 +34,10 @@ After hours: building tools, poking at AI security, and mass producing Go binari
 
 ```yaml
 focus:
-  - LLM threat modeling
-  - prompt injection research
-  - securing agentic systems
-  - adversarial AI defense
+  - All things Agents
+  - Supply chain
+  - SecDevOps
+  - Product security
 
 status: caffeinated
 oncall: probably
