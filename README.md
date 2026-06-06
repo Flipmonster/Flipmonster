@@ -1,9 +1,5 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=180&section=header&text=&fontSize=0" width="100%">
 
-<div align="center">
-<p>
-  <sub>south african in the netherlands — husband, dad of two, owned by two dachshunds</sub>
-</p>
 
 <a href="https://www.linkedin.com/in/pvw1337/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <a href="https://twitter.com/_0xrizla"><img src="https://img.shields.io/badge/@__0xrizla-000000?style=flat-square&logo=x&logoColor=white" alt="X"></a>
