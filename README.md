@@ -16,7 +16,7 @@
 
 ### `> cat /etc/motd`
 
-Security engineer at [Bird](https://bird.com) — cloud security, application security, coffee drinking.
+Product Security engineer at [Clickhouse](https://clickhouse.com) — cloud security, application security, coffee drinking.
 
 After hours: building tools, poking at AI security, and mass producing Go binaries that may or may not work.
 
